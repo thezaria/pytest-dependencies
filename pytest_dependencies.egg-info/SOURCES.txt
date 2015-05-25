@@ -1,0 +1,8 @@
+pytest_dependencies.py
+setup.cfg
+setup.py
+pytest_dependencies.egg-info/PKG-INFO
+pytest_dependencies.egg-info/SOURCES.txt
+pytest_dependencies.egg-info/dependency_links.txt
+pytest_dependencies.egg-info/entry_points.txt
+pytest_dependencies.egg-info/top_level.txt
