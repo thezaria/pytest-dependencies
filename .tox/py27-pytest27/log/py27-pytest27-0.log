@@ -1,8 +1,0 @@
-actionid: py27-pytest27
-msg: getenv
-cmdargs: ['/usr/bin/python', '-m', 'virtualenv', '--python', '/opt/local/bin/python2.7', 'py27-pytest27']
-env: {'PATH': '/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py27-pytest27/bin:/Users/thezaria/.rvm/gems/ruby-2.2.1/bin:/Users/thezaria/.rvm/gems/ruby-2.2.1@global/bin:/Users/thezaria/.rvm/rubies/ruby-2.2.1/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Users/thezaria/Documents/workspace/mongo/mongodb/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/thezaria/.rvm/bin', 'VIRTUAL_ENV': '/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py27-pytest27', 'PYTHONHASHSEED': '2053897586'}
-
-New python executable in py27-pytest27/bin/python
-Installing setuptools, pip, wheel...done.
-Running virtualenv with interpreter /opt/local/bin/python2.7
