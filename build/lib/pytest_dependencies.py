@@ -1,7 +1,7 @@
 import pytest
 
-#def pytest_addoption(parser):
-#    parser.addoption("-D", action="store", metavar="NAME", help="help will be later")
+def pytest_addoption(parser):
+    parser.addoption("--skipdeps", action="store_true", help="Skip dependencies in tests")
 
 tests_dict = {}
 
@@ -11,7 +11,7 @@ def pytest_configure(config):
 
 def pytest_runtest_setup(item):
     depmarker = item.get_marker("dependends_on")
-    if depmarker is not None:
+    if depmarker is not None and not item.config.getoption("--skipdeps"):
         deptestname = depmarker.args[0]
         key = '%s::%s' % (item.location[0], deptestname)
         # test outcome, always one of "passed", "failed", "skipped" - we need only passed

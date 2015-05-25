@@ -1,0 +1,16 @@
+actionid: py26
+msg: getenv
+cmdargs: [local('/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py26/bin/pip'), 'install', 'pytest>=2.0.0']
+env: {'PATH': '/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py26/bin:/Users/thezaria/.rvm/gems/ruby-2.2.1/bin:/Users/thezaria/.rvm/gems/ruby-2.2.1@global/bin:/Users/thezaria/.rvm/rubies/ruby-2.2.1/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Users/thezaria/Documents/workspace/mongo/mongodb/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/thezaria/.rvm/bin', 'VIRTUAL_ENV': '/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py26', 'PYTHONHASHSEED': '1723185669'}
+
+/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py26/lib/python2.6/site-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:90: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+Collecting pytest>=2.0.0
+/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py26/lib/python2.6/site-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:90: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Downloading pytest-2.7.1-py2.py3-none-any.whl (126kB)
+Collecting py>=1.4.25 (from pytest>=2.0.0)
+  Downloading py-1.4.27-py2.py3-none-any.whl (81kB)
+Requirement already satisfied (use --upgrade to upgrade): argparse in ./.tox/py26/lib/python2.6/site-packages (from pytest>=2.0.0)
+Installing collected packages: py, pytest
+Successfully installed py-1.4.27 pytest-2.7.1

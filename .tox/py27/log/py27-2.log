@@ -1,0 +1,8 @@
+actionid: py27
+msg: installpkg
+cmdargs: [local('/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py27/bin/pip'), 'install', 'pytest_dependencies.py']
+env: {'PATH': '/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py27/bin:/Users/thezaria/.rvm/gems/ruby-2.2.1/bin:/Users/thezaria/.rvm/gems/ruby-2.2.1@global/bin:/Users/thezaria/.rvm/rubies/ruby-2.2.1/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Users/thezaria/Documents/workspace/mongo/mongodb/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/thezaria/.rvm/bin', 'VIRTUAL_ENV': '/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py27', 'PYTHONHASHSEED': '3750344474'}
+
+Collecting pytest-dependencies.py
+  Could not find a version that satisfies the requirement pytest-dependencies.py (from versions: )
+No matching distribution found for pytest-dependencies.py

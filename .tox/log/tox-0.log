@@ -1,0 +1,42 @@
+actionid: tox
+msg: packaging
+cmdargs: ['/usr/bin/python', local('/Users/thezaria/Documents/workspace/python/pytest-dependencies/setup.py'), 'sdist', '--formats=zip', '--dist-dir', local('/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/dist')]
+env: None
+
+running sdist
+running egg_info
+writing pytest_dependencies.egg-info/PKG-INFO
+writing top-level names to pytest_dependencies.egg-info/top_level.txt
+writing dependency_links to pytest_dependencies.egg-info/dependency_links.txt
+writing entry points to pytest_dependencies.egg-info/entry_points.txt
+reading manifest file 'pytest_dependencies.egg-info/SOURCES.txt'
+writing manifest file 'pytest_dependencies.egg-info/SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt
+
+running check
+warning: check: missing required meta-data: url
+
+creating pytest-dependencies-0.0.7
+creating pytest-dependencies-0.0.7/pytest_dependencies.egg-info
+making hard links in pytest-dependencies-0.0.7...
+hard linking pytest_dependencies.py -> pytest-dependencies-0.0.7
+hard linking setup.cfg -> pytest-dependencies-0.0.7
+hard linking setup.py -> pytest-dependencies-0.0.7
+hard linking pytest_dependencies.egg-info/PKG-INFO -> pytest-dependencies-0.0.7/pytest_dependencies.egg-info
+hard linking pytest_dependencies.egg-info/SOURCES.txt -> pytest-dependencies-0.0.7/pytest_dependencies.egg-info
+hard linking pytest_dependencies.egg-info/dependency_links.txt -> pytest-dependencies-0.0.7/pytest_dependencies.egg-info
+hard linking pytest_dependencies.egg-info/entry_points.txt -> pytest-dependencies-0.0.7/pytest_dependencies.egg-info
+hard linking pytest_dependencies.egg-info/top_level.txt -> pytest-dependencies-0.0.7/pytest_dependencies.egg-info
+copying setup.cfg -> pytest-dependencies-0.0.7
+Writing pytest-dependencies-0.0.7/setup.cfg
+creating '.tox/dist/pytest-dependencies-0.0.7.zip' and adding 'pytest-dependencies-0.0.7' to it
+adding 'pytest-dependencies-0.0.7/PKG-INFO'
+adding 'pytest-dependencies-0.0.7/pytest_dependencies.py'
+adding 'pytest-dependencies-0.0.7/setup.cfg'
+adding 'pytest-dependencies-0.0.7/setup.py'
+adding 'pytest-dependencies-0.0.7/pytest_dependencies.egg-info/dependency_links.txt'
+adding 'pytest-dependencies-0.0.7/pytest_dependencies.egg-info/entry_points.txt'
+adding 'pytest-dependencies-0.0.7/pytest_dependencies.egg-info/PKG-INFO'
+adding 'pytest-dependencies-0.0.7/pytest_dependencies.egg-info/SOURCES.txt'
+adding 'pytest-dependencies-0.0.7/pytest_dependencies.egg-info/top_level.txt'
+removing 'pytest-dependencies-0.0.7' (and everything under it)

@@ -1,0 +1,11 @@
+actionid: py27
+msg: getenv
+cmdargs: [local('/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py27/bin/pip'), 'install', 'pytest>=2.0.0']
+env: {'PATH': '/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py27/bin:/Users/thezaria/.rvm/gems/ruby-2.2.1/bin:/Users/thezaria/.rvm/gems/ruby-2.2.1@global/bin:/Users/thezaria/.rvm/rubies/ruby-2.2.1/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Users/thezaria/Documents/workspace/mongo/mongodb/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/thezaria/.rvm/bin', 'VIRTUAL_ENV': '/Users/thezaria/Documents/workspace/python/pytest-dependencies/.tox/py27', 'PYTHONHASHSEED': '3750344474'}
+
+Collecting pytest>=2.0.0
+  Using cached pytest-2.7.1-py2.py3-none-any.whl
+Collecting py>=1.4.25 (from pytest>=2.0.0)
+  Using cached py-1.4.27-py2.py3-none-any.whl
+Installing collected packages: py, pytest
+Successfully installed py-1.4.27 pytest-2.7.1

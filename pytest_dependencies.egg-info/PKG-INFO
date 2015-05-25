@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: pytest-dependencies
-Version: 0.0.3
+Version: 0.0.7
 Summary: py.test plugin to define test dependencies by using custom marker dependends_on(<test_name>).
 Home-page: UNKNOWN
 Author: Julia Nol
