@@ -1,28 +1,23 @@
 import pytest
 
+#def pytest_addoption(parser):
+#    parser.addoption("-D", action="store", metavar="NAME", help="help will be later")
+
+tests_dict = {}
+
 def pytest_configure(config):
     # register an additional marker
-    config.addinivalue_line("markers",
-        "dependents_on(name): mark test dependent on named test")
+    config.addinivalue_line("markers", "dependends_on(name): mark test dependent on named test")
 
 def pytest_runtest_setup(item):
-    depmarker = item.get_marker("dependents_on")
-
+    depmarker = item.get_marker("dependends_on")
     if depmarker is not None:
         deptestname = depmarker.args[0]
-        previousfailed = getattr(item.parent, "_previousfailed", None)
-        # check that dependent test passed
-        if previousfailed is not None:
-            pytest.skip("test depends on failed test, it will be skipped %r" % deptestname)
+        key = '%s::%s' % (item.location[0], deptestname)
+        # test outcome, always one of "passed", "failed", "skipped" - we need only passed
+        if tests_dict.get(key) != "passed":
+            pytest.skip("this test depends on test with failed or skipped status")
 
-
-#def pytest_runtest_makereport(item, call):
-#    if "dependents_on" in item.keywords:
-#        if call.excinfo is not None:
-#            parent = item.parent
-#            parent._previousfailed = item
-
-# def pytest_runtest_setup(item):
-  #  previousfailed = getattr(item.parent, "_previousfailed", None)
-  #  if previousfailed is not None:
-  #      pytest.xfail("previous test failed (%s)" % previousfailed.name)
+def pytest_runtest_logreport(report):
+    if report.when == 'call':
+        tests_dict[str(report.nodeid)] = report.outcome
